@@ -51,7 +51,7 @@ def webhook():
     dispatcher.process_update(update)
     return 'OK'
 
-if name == 'main':
+if __name__ == '__main__':
     # Устанавливаем Webhook для Telegram
     bot.set_webhook(WEBHOOK_URL)
 
